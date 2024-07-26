@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Control de Asistencia</string>
+    <string name="lista">Lista de Empleados :</string>
+    <string name="nombreEmpleado">Dagoberto Tellez</string>
+    <string name="empleadoPosicion">Interno</string>
+    <string name="Perfil">Perfil</string>
+    <string name="digite_el_codigo">Digite el codigo</string>
+</resources>

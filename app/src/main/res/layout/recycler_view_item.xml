@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:background="@drawable/stylo_borde_listaempleados"
+              android:layout_width="match_parent"
+              android:backgroundTint="@color/ESconsultores_blue"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="15dp"
+              android:layout_height="wrap_content"
+              android:elevation="5dp"
+              android:id="@+id/main_detailedlayout">
+
+
+  <ImageView
+      android:id="@+id/Rvlogo"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="10sp"
+      android:layout_marginBottom="10sp"
+      android:background="@drawable/person_24px"
+      android:contentDescription="logo"
+      android:outlineAmbientShadowColor="@color/white"
+      tools:ignore="HardcodedText"
+      tools:layout_editor_absoluteX="70dp"
+      tools:layout_editor_absoluteY="110dp" />
+
+  <LinearLayout
+      android:id="@+id/boxInfoUsuario"
+      android:layout_width="169dp"
+      android:layout_height="72dp"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:padding="5dp">
+
+    <TextView
+        android:id="@+id/RvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/white"
+        tools:text="@string/nombreEmpleado" />
+
+    <TextView
+        android:id="@+id/RvPosicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:textColor="@color/white"
+        tools:text="@string/empleadoPosicion" />
+  </LinearLayout>
+
+  <View
+      android:id="@+id/circleView"
+      android:layout_width="46dp"
+      android:layout_height="25dp"
+      android:layout_marginStart="40sp"
+      android:layout_marginTop="31sp"
+      android:layout_marginEnd="31sp"
+      android:layout_marginBottom="30sp"
+      android:layout_weight="1"
+      android:background="@drawable/redcircle"
+
+      android:gravity="center" />
+
+</LinearLayout>

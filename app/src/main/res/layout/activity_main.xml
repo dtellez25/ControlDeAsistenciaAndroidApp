@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/stylo_borde_text"
+        android:backgroundTint="@color/ESconsultores_blue"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="15sp"
+        android:contentDescription="logo"
+        app:srcCompat="@drawable/pepsi_logo"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/TvListaEmpleados"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/lista"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvListaEmpleados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_item" />
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RvListaEmpleados"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/recycler_view_item"
+            android:divider="@color/white"
+            android:dividerHeight="10sp"/>
+    </RelativeLayout>-->
+
+
+
+</LinearLayout>
